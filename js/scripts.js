@@ -8,6 +8,9 @@ app.controller('MainCtrl', function($scope, answers){
 		answers.getAnswer().then(function(data){
 			$scope.item = data;
 		});
+		var saved = $scope.question;
+		$scope.question = '';
+		console.log(saved);
 	};
 
 	$scope.newAnswer();

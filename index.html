@@ -9,9 +9,12 @@
 </head>
 <body>
 	<div class="main" ng-controller="MainCtrl">
+		<h1>The Indifference Curve</h1>
+		<img src="http://www.bized.co.uk/sites/bized/files/images/ind_curve_opt_con.gif" alt="">
+		<input type="text" ng-model="question">
+		<button ng-click="newAnswer()">Ask Something!!</button>
 		<h1>{{item.answer}}</h1>
 		<img ng-src="{{item.image}}" alt="">
-		<button ng-click="newAnswer()">Ask Again!!</button>
 	</div>
 </body>
 </html>
